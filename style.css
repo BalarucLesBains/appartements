@@ -1,4 +1,4 @@
-/* Reset de base */
+/* Reset et base */
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +10,15 @@ body {
   line-height: 1.6;
   background: #f5faff;
   color: #0a1e3d;
-  padding-top: 60px; /* pour laisser la place au menu fixe */
+  padding-top: 60px; /* hauteur menu */
 }
 
-/* Menu fixe */
+/* Menu fixe avec dégradé bleu */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #003366; /* bleu foncé */
+  background: linear-gradient(135deg, #0059b3, #003366);
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   z-index: 1000;
 }
@@ -33,7 +33,7 @@ header {
 }
 
 .logo {
-  color: #fff;
+  color: #aad4ff;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -48,29 +48,28 @@ header {
   color: #aad4ff;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
 }
 
 .nav-links li a:hover {
   color: #ffffff;
 }
 
-/* Bannière */
+.nav-links li a.active {
+  color: #ffffff;
+  border-bottom: 3px solid #ffd700; /* jaune doré */
+}
+
+/* Bannière générique */
 .banner {
-  background: linear-gradient(135deg, #0059b3, #003366);
   color: white;
   text-align: center;
   padding: 100px 20px 60px;
-}
-
-.banner h1 {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-}
-
-.banner p {
-  font-size: 1.2rem;
-  font-style: italic;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Section contenu */
@@ -80,6 +79,27 @@ header {
   padding: 0 20px;
   font-size: 1.1rem;
   color: #0a1e3d;
+}
+
+/* Galerie photo */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* Section contact */
@@ -113,65 +133,5 @@ header {
   margin-bottom: 15px;
   border: 1.5px solid #aaccee;
   border-radius: 5px;
-  font-size: 1rem;
-  transition: border-color 0.3s;
-}
+  font-size:
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #0059b3;
-  outline: none;
-}
-
-.contact-form button {
-  background: #003366;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: 100%;
-}
-
-.contact-form button:hover {
-  background: #0059b3;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px 0;
-  background: #003366;
-  color: #aad4ff;
-  font-size: 0.9rem;
-}
-/* Bannière appartement avec fond différent */
-.appartement-banner {
-  background: linear-gradient(135deg, #004080, #00264d);
-  color: #cce4ff;
-  padding: 80px 20px 40px;
-  text-align: center;
-}
-
-/* Galerie photo */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-.gallery img {
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
