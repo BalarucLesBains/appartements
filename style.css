@@ -77,22 +77,29 @@ body {
     display: none;
     position: absolute;
     top: 60px;
-    right: 20px;
+    left: 10px; /* ← décalé vers la gauche */
+    right: 10px; /* ← évite que ça déborde */
     background: #0077cc;
     flex-direction: column;
-    padding: 10px;
-    border-radius: 5px;
-    width: max-content;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
 
   .nav-links.show {
     display: flex;
   }
 
+  .nav-links li {
+    text-align: center;
+    margin: 5px 0;
+  }
+
   .menu-toggle {
     display: flex;
   }
 }
+
 
 /* --- BANNIÈRE --- */
 
