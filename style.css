@@ -147,3 +147,31 @@ footer {
   color: #aad4ff;
   font-size: 0.9rem;
 }
+/* Bannière appartement avec fond différent */
+.appartement-banner {
+  background: linear-gradient(135deg, #004080, #00264d);
+  color: #cce4ff;
+  padding: 80px 20px 40px;
+  text-align: center;
+}
+
+/* Galerie photo */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
