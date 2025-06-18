@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Appartements à Balaruc-les-Bains</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Appartements à Balaruc-les-Bains</h1>
-    <p>Pour simplement profiter à Balaruc-les-Bains, au soleil et au bord de l'eau bleue. Description à remplir </p>
+    <nav class="navbar">
+      <div class="logo">Balaruc-les-Bains</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="appartement1.html">Appartement 1</a></li>
+        <li><a href="appartement2.html">Appartement 2</a></li>
+        <li><a href="appartement3.html">Appartement 3</a></li>
+        <li><a href="appartement4.html">Appartement 4</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <h2>Nos appartements</h2>
-    <ul class="liste-appartements">
-      <li><a href="appartement1.html">Appartement 1</a></li>
-      <li><a href="appartement2.html">Appartement 2</a></li>
-      <li><a href="appartement3.html">Appartement 3</a></li>
-      <li><a href="appartement4.html">Appartement 4</a></li>
-    </ul>
+    <section class="banner">
+      <h1>Appartements à Balaruc-les-Bains</h1>
+      <p>Pour simplement profiter à Balaruc-les-Bains, au soleil et au bord de l'eau bleue</p>
+    </section>
+
+    <section class="content">
+      <p>Bienvenue sur notre site dédié aux appartements de charme à Balaruc-les-Bains. Découvrez nos offres et profitez d’un séjour paisible au bord de l’étang.</p>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contactez-nous</h2>
+      <form action="https://formspree.io/f/maylryoq" method="POST" class="contact-form">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Appartements à Balaruc-les-Bains</p>
+    <p>© 2025 Appartements à Balaruc-les-Bains</p>
   </footer>
 </body>
 </html>
