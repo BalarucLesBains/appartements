@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Appartement 4 - Balaruc-les-Bains</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Appartement 4</h1>
-    <p><a href="index.html">← Retour à l'accueil</a></p>
+    <nav class="navbar">
+      <div class="logo">Balaruc-les-Bains</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="appartement1.html">Appartement 1</a></li>
+        <li><a href="appartement2.html">Appartement 2</a></li>
+        <li><a href="appartement3.html">Appartement 3</a></li>
+        <li><a href="appartement4.html" class="active">Appartement 4</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <h2>Description</h2>
-    <p>Ici, tu peux ajouter la description complète de l'appartement, ses équipements, la surface, etc.</p>
+    <section class="banner" 
+      style="background-image: linear-gradient(rgba(0,51,102,0.3), rgba(0,51,102,0.3)), url('images/appartement4-bandeau.jpg');">
+      <h1>Appartement 4</h1>
+      <p>Studio cosy pour une pause au soleil</p>
+    </section>
 
-    <h2>Photos</h2>
-    <img src="images/appartement4-photo1.jpg" alt="Appartement 4 photo 1" style="max-width:100%; height:auto;">
-    <img src="images/appartement4-photo2.jpg" alt="Appartement 4 photo 2" style="max-width:100%; height:auto;">
+    <section class="content">
+      <p>Le studio idéal pour les séjours courts ou les cures à Balaruc. Compact, confortable, et proche de tout.</p>
+      
+      <div class="gallery">
+        <img src="images/appartement4-1.jpg" alt="Studio de l'appartement 4" />
+        <img src="images/appartement4-2.jpg" alt="Salle d'eau" />
+        <img src="images/appartement4-3.jpg" alt="Terrasse" />
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Appartements à Balaruc-les-Bains</p>
+    <p>© 2025 Appartements à Balaruc-les-Bains</p>
   </footer>
 </body>
 </html>
+
