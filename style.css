@@ -1,49 +1,149 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+/* Reset de base */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f5f9fa;
-  color: #333;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f5faff;
+  color: #0a1e3d;
+  padding-top: 60px; /* pour laisser la place au menu fixe */
+}
+
+/* Menu fixe */
 header {
-  background-color: #0077b6;
-  color: white;
-  padding: 20px;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #003366; /* bleu foncé */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
 }
 
-main {
-  padding: 20px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
 
-h1, h2 {
-  margin-bottom: 0.5em;
-}
-
-.liste-appartements {
-  list-style-type: none;
-  padding: 0;
-}
-
-.liste-appartements li {
-  margin: 10px 0;
-}
-
-.liste-appartements a {
-  color: #0077b6;
-  text-decoration: none;
+.logo {
+  color: #fff;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.liste-appartements a:hover {
-  text-decoration: underline;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-footer {
-  background-color: #e0e0e0;
+.nav-links li a {
+  color: #aad4ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+/* Bannière */
+.banner {
+  background: linear-gradient(135deg, #0059b3, #003366);
+  color: white;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
+  padding: 100px 20px 60px;
+}
+
+.banner h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Section contenu */
+.content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  color: #0a1e3d;
+}
+
+/* Section contact */
+.contact-section {
+  max-width: 500px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  background: #e7f0ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #003366;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1.5px solid #aaccee;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0059b3;
+  outline: none;
+}
+
+.contact-form button {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background: #0059b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #003366;
+  color: #aad4ff;
+  font-size: 0.9rem;
 }
