@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+
+.liste-appartements {
+  list-style-type: none;
+  padding: 0;
+}
+
+.liste-appartements li {
+  margin: 10px 0;
+}
+
+.liste-appartements a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.liste-appartements a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
